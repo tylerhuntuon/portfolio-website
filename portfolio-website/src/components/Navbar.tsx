@@ -2,10 +2,13 @@ import { NavLink } from "react-router";
 
 function Navbar(){
     return(
-        <nav>
-            <h1>Navbar</h1>
-            <NavLink to="/">Home</NavLink>
-        </nav>
+        <div className="absolute top-0 left-0 z--50 w-full">
+            <nav>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/projects">Projects</NavLink>
+            </nav>
+        </div>
+        
     );
 }
 
